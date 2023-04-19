@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import React,{useState} from 'react';
 import './App.css';
+// import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as  Router, Routes, Route } from 'react-router-dom';
+import Header from './Layout/Header/Header';
+import Login from './components/Login/Login';
+// import Cart from './components/Cart/Cart';
+// import List from './components/List/List';
+
 
 function App() {
+  // const [cartValue,setCartValue]=useState([])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<Header />} />
+      </Routes>
+     
+     
+    </>
   );
 }
 
 export default App;
+

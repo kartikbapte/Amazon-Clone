@@ -1,0 +1,13 @@
+
+.header .headerOption_Basket{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.header .headerOption_Basket .basketCount{
+    border: 1px solid #fff;
+    font-size: 16px;
+    border-radius: 100px;
+    margin: 0 15px -20px -10px;
+    padding: 2px 4px;
+}
